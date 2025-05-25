@@ -1,6 +1,6 @@
 <template>
     <UCard>
-        <UImage :src="article.image" />
+        <img :src="article.image" alt="" class="w-full h-48 object-cover rounded-lg mb-4">
         <h2 class="text-lg md:text-xl font-bold mb-2">{{ article.title }}</h2>
         <div class="flex flex-wrap gap-2">
             <UBadge v-for="tag in article.tags" :key="tag" variant="outline">{{ tag }}</UBadge>
