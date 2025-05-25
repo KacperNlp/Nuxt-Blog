@@ -1,13 +1,11 @@
 <template>
-    <main class="min-h-screen w-[90%] mx-auto max-w-[1200px]">
-        <UContainer>
-            <div v-if="articles.length" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
-                <div v-for="article in articles" :key="article.id">
-                    <AppArticle :article="article" />
-                </div>
+    <UContainer>
+        <div v-if="articles.length" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8">
+            <div v-for="article in articles" :key="article.id">
+                <AppArticle :article="article" />
             </div>
-        </UContainer>
-    </main>
+        </div>
+    </UContainer>
 </template>
 
 <script setup>
